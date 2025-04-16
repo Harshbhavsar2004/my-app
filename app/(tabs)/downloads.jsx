@@ -45,14 +45,14 @@ export default function Downloads() {
       right: 12,
   };
   return (
-    <View className="flex-1 p-5 bg-white">
+    <View className="flex-1 p-5 bg-secondary">
       <Text className="font-bold text-lg mb-4 text-primary">Download Attendance Report</Text>
 
       {/* Year Select */}
       <Text className="font-semibold mb-1 text-primary">Select Year:</Text>
-      <Select selectedValue={year} onValueChange={(val) => setYear(val)} className="mb-4">
-        <SelectTrigger className="w-full p-2 border border-gray-400 rounded">
-          <SelectValue placeholder="Select Year" />
+      <Select selectedValue={year} onValueChange={(val) => setYear(val)} className="mb-4 text-primary">
+        <SelectTrigger className="w-full p-2 border text-primary border-gray-400 rounded">
+          <SelectValue placeholder="Select Year" className="text-primary"/>
         </SelectTrigger>
         <SelectContent className="w-full" insets={contentInsets}>
           <SelectItem label="First Year" value="First Year" />

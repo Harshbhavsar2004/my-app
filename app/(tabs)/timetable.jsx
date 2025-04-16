@@ -14,7 +14,7 @@ const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 
 export default function Timetable() {
   return (
-    <ScrollView className="p-4 bg-white">
+    <ScrollView className="p-4 bg-secondary">
       <ScrollView horizontal>
         <View>
           {/* Header Row */}
@@ -37,7 +37,7 @@ export default function Timetable() {
               </View>
               {subjects.map((subject, i) => (
                 <View key={i} className="w-24 h-12 border-r border-gray-300 items-center justify-center">
-                  <Text className="text-sm text-center">{subject}</Text>
+                  <Text className="text-sm text-center text-primary">{subject}</Text>
                 </View>
               ))}
             </View>
